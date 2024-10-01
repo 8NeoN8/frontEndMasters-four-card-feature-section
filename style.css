@@ -1,10 +1,22 @@
+:root{
+  /** Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  
+  /** Neutral */
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   position: relative;
-  font-family: 'Outfit';  
-  color: var(--Stone-900);
+  font-family: 'Poppins';
 }
 
 body > *{
@@ -33,7 +45,7 @@ body > *{
   left: 0;
   z-index: 10;
   width: 100%;
-  opacity: 1;
+  opacity: 0.8;
   
 }
 
@@ -55,51 +67,95 @@ body > *{
 }
 
 .main-container{
-    width: 100vw;
-    height: 100%;
-    min-height: 100vh;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  padding-top: 5.2rem;
+  background-color: var(--Very-Light-Gray);
 }
 
 .site-intro{
-
+ margin-bottom: 4.8rem;
 }
 
 .intro-title{
+  font-size: 1.5rem;
+  text-align: center;
 
+  font-weight: 200;
+  word-spacing: 2px;
+  margin-bottom: 1rem;
 }
 
 .accent-text{
-
+  display: block;
+  width: 100%;
+  font-weight: 600;
 }
 
 .intro-text{
-
+  text-align: center;
+  line-height: 1.56rem;
+  word-spacing: 1px;
 }
 
 .cards{
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .card{
+  background-color: white;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  padding: 1.35rem 1.8rem;
+  border-radius: 5px;
+  box-shadow: 1px 10px 10px rgba(128, 128, 128, 0.2);
+}
 
+.united-cards{
+  width: 100%;
 }
 
 .card-title{
-
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.33rem;
 }
 
 .card-text{
-
+  font-size: 0.8rem;
+  word-spacing: 1.3px;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
 }
 
 .card-img-container{
-
+text-align: right;
 }
 
 .card-img{
-
+  width: 3.6rem;
 }
 
+.supervisor-card{
+  border-top: 4px solid var(--Cyan);
+}
+
+.team-builder-card{
+  border-top: 4px solid var(--Red);
+}
+
+.karma-card{
+  border-top: 4px solid var(--Orange);
+}
+
+.calculator-card{
+  border-top: 4px solid var(--Blue);
+}
