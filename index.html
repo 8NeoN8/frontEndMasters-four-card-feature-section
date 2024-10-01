@@ -9,24 +9,63 @@
 </head>
 <body>
 
+  <div class="tog-con">
+    <button class="toggle" id="toggle" onclick="toggle()">toggle</button>
+  </div>
+
+  <img src="./design/mobile-design.jpg" alt="reference image" class="reference hidden" id="reference" width="375px">
+
   <main class="main-container">
-    Reliable, efficient delivery
-    Powered by Technology
-  
-    Our Artificial Intelligence powered tools use millions of project data points 
-    to ensure that your project is successful
-  
-    Supervisor
-    Monitors activity to identify project roadblocks
-  
-    Team Builder
-    Scans our talent network to create the optimal team for your project
-  
-    Karma
-    Regularly evaluates our talent to ensure quality
-  
-    Calculator
-    Uses data from past projects to provide better delivery estimates
+
+    <div class="site-intro">
+      <h1 class="intro-title">
+        Reliable, efficient delivery
+        <br>
+        <b class="accent-text">Powered by Technology</b>
+      </h1>
+      <p class="intro-text">
+        Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+      </p>
+
+    </div>
+
+    <div class="cards">
+
+      <section class="supervisor-card card">
+        <h2 class="card-title">Supervisor</h2>
+        <p class="card-text">Monitors activity to identify project roadblocks</p>
+        <div class="card-img-container">
+          <img src="./images/icon-supervisor.svg" alt="supervisor icon" class="card-img">
+        </div>
+      </section>
+
+      <section class="united-cards">
+        <section class="supervisor-card card">
+          <h2 class="card-title">Team Builder</h2>
+          <p class="card-text">Scans our talent network to create the optimal team for your project</p>
+          <div class="card-img-container">
+            <img src="./images/icon-team-builder.svg" alt="team builder icon" class="card-img">
+          </div>
+        </section>
+
+        <section class="supervisor-card card">
+          <h2 class="card-title">Karma</h2>
+          <p class="card-text">Regularly evaluates our talent to ensure quality</p>
+          <div class="card-img-container">
+            <img src="./images/icon-karma.svg" alt="karma icon" class="card-img">
+          </div>
+        </section>
+      </section>
+
+      <section class="supervisor-card card">
+        <h2 class="card-title">Calculator</h2>
+        <p class="card-text">Uses data from past projects to provide better delivery estimates</p>
+        <div class="card-img-container">
+          <img src="./images/icon-calculator.svg" alt="calculator icon" class="card-img">
+        </div>
+      </section>
+
+    </div>
   </main>
   
 
@@ -35,5 +74,16 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="attribution-link">Frontend Mentor</a>. 
     Coded by <a href="https://www.github.com/8NeoN8" target="_blank" class="attribution-link">AGDevs</a>.
   </footer>
+
+  <script>
+
+    function toggle(){
+      let reference = document.getElementById('reference')
+      if(reference.classList.contains('hidden')){
+        reference.classList.remove('hidden')
+      }else reference.classList.add('hidden')
+    }
+
+  </script>
 </body>
 </html>
